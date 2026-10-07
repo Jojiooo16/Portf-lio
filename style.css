@@ -1,0 +1,1162 @@
+* {
+    margin: 0;
+    margin-right: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --branco: #ffffff;
+    --preto: black;
+    --ball: purple;
+    --cor: rgb(156, 65, 156);
+    --Sei: #E16AF9;
+    --cores: #E4A8FF;
+    --opaco: 0 2px 4px rgba(0, 0, 0, 0.5);
+    --botao: #570072;
+    --fundo: purple;
+    --roxo: #692a86;
+    ;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--botao);
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+
+.switch input:checked+.slider {
+    background-color: #f8acff;
+}
+
+
+.switch input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+
+body {
+    background-color: var(--branco);
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.dropdown {
+    width: 40%;
+}
+
+.dropbtn {
+    display: none;
+}
+
+.imgs {
+    background-color: var(--ball);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--preto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo_nome {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+
+}
+
+.imgs img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.img img {
+    width: 100%;
+    height: 10vh;
+}
+
+#logo_nome p {
+    font-family: "Graduate", serif;
+    color: var(--preto);
+}
+
+.dropdown-content a {
+    font-family: "Graduate", serif;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: "Graduate", serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.conteudo1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Graduate", serif;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.conteudo1 p {
+    width: 80%;
+    font-size: 40px;
+    color: var(--preto);
+    text-align: center;
+    font-family: "IM Fell Great Primer SC", serif;
+}
+
+.conteudo1 h1 {
+    width: 90%;
+    font-size: 64px;
+    color: var(--preto);
+    text-align: center;
+}
+
+.eu {
+    width: 100%;
+    height: 70vh;
+    margin-right: 50px;
+}
+
+.phrase {
+    width: 100%;
+    font-size: 32px;
+    color: var(--preto);
+    text-align: center;
+    margin: 30px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex img {
+    width: 40%;
+    height: 50%;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.sec2 {
+    width: 100%;
+    height: 230vh;
+}
+
+.flex p {
+    font-family: "Graduate", serif;
+    font-size: 32px;
+    color: var(--preto);
+}
+
+.sec2 h1 {
+    font-family: "Graduate", serif;
+    font-size: 64px;
+    color: var(--preto);
+    margin-left: 200px;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+}
+
+.projetos a {
+    background-color: var(--cor);
+    width: 80%;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 32px;
+    color: var(--preto);
+}
+
+.sec3 {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sec3 h1 {
+    font-family: "Graduate", serif;
+    font-size: 64px;
+    color: var(--preto);
+}
+
+.sec4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tu {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tu div {
+    width: 40%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cer1 img {
+    width: 95%;
+    height: 100vh;
+}
+
+.cer2 img {
+    width: 95%;
+    height: 100vh;
+}
+
+.cer3 img {
+    width: 95%;
+    height: 100vh;
+}
+
+.cer1 p {
+    width: 95%;
+    height: 100%;
+    font-family: "Graduate", serif;
+    font-size: 36px;
+    color: var(--preto);
+}
+
+.cer2 p {
+    width: 95%;
+    height: 100%;
+    font-family: "Graduate", serif;
+    font-size: 36px;
+    color: var(--preto);
+}
+
+.cer3 p {
+    width: 95%;
+    height: 100%;
+    font-family: "Graduate", serif;
+    font-size: 36px;
+    color: var(--preto);
+}
+
+.sec4 h1 {
+    font-family: "Graduate", serif;
+    font-size: 64px;
+    margin-top: 10px;
+    color: var(--preto);
+}
+
+.sec5 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sec5 h1 {
+    font-family: "Graduate", serif;
+    font-size: 64px;
+    margin-top: 10px;
+    color: var(--preto);
+}
+
+.sec6 {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#roxo {
+    background-color: var(--Sei);
+    width: 40%;
+    height: 60%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sec6 h1 {
+    font-family: "Graduate", serif;
+    font-size: 64px;
+    margin-top: 10px;
+    color: var(--preto);
+}
+
+#roxo h2 {
+    color: var(--preto);
+    font-family: "Graduate", serif;
+    font-size: 48px;
+}
+
+
+.footer {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cores);
+}
+.redes {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.insta {
+    width: 100%;
+    height: 100%;
+}
+
+.redes a {
+    width: 10%;
+    height: 10%;
+}
+
+.link {
+    width: 100%;
+    height: 100%;
+}
+
+.flexing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.direitos {
+    font-family: "Graduate", serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 50px;
+}
+
+.email h1 {
+    font-family: "Graduate", serif;
+    font-size: 60px;
+
+}
+
+.email h2 {
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    font-size: 48px;
+}
+
+.container-slides {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 1rem;
+}
+
+.imagens-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    aspect-ratio: 16 / 9;
+
+}
+
+.carroseu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    margin-bottom: 50px;
+}
+
+.carroseu img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    border-bottom: 50px;
+}
+
+.slide-texto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.slide-texto h2 {
+    color: var(--branco);
+    font-size: 1.5rem;
+    margin: 0;
+    text-shadow: var(--opaco);
+}
+
+.on {
+    opacity: 1;
+    z-index: 1;
+}
+
+#volta,
+#ir {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#volta img,
+#ir img {
+    width: 100%;
+    height: 100%;
+}
+
+.forms {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#fundo {
+    width: 30%;
+    height: 80%;
+    background-color: var(--fundo);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 80%;
+    height: 5%;
+    border-radius: 10px;
+    border: none;
+}
+
+#ENVIAR {
+    width: 50%;
+    height: 10%;
+    border-radius: 20px;
+    background-color: var(--cores);
+}
+
+#ENVIAR p {
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 21px;
+}
+
+.dark_mode {
+    --branco: black;
+    --preto: white;
+    --ball: purple;
+    --cor: rgb(156, 65, 156);
+    --Sei: #E16AF9;
+    --cores: #E4A8FF;
+    --botao: #570072;
+    --fundo: purple;
+}
+
+@media (max-width: 550px) {
+    .dark_mode {
+        --branco: black;
+        --preto: white;
+        --ball: purple;
+        --cor: rgb(156, 65, 156);
+        --Sei: #E16AF9;
+        --cores: #E4A8FF;
+        --botao: #570072;
+        --fundo: purple;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #logo_nome {
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        scale: 0.8;
+    }
+
+    #logo_nome .img {
+        width: 40%;
+        height: 50%;
+    }
+
+    #logo_nome .img img {
+        width: 100%;
+        height: 100%;
+        scale: 0.8;
+    }
+
+    #logo_nome p {
+        width: 80px;
+        font-size: 10px;
+    }
+
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 45px;
+        height: 24px;
+    }
+
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--botao);
+        transition: 0.4s;
+        border-radius: 34px;
+    }
+
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+
+
+    .switch input:checked+.slider {
+        background-color: #f8acff;
+    }
+
+
+    .switch input:checked+.slider:before {
+        transform: translateX(20px);
+    }
+
+    .imgs {
+        background-color: var(--Sei);
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+    }
+
+    .imgs img {
+        width: 12px;
+        height: 12px;
+        object-fit: cover;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        font-family: "Graduate", serif;
+        width: 100%;
+        height: 120vh;
+    }
+
+    .conteudo1 {
+        flex-direction: column;
+        font-family: "Graduate", serif;
+    }
+
+    .display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .conteudo1 p {
+        width: 80%;
+        font-size: 20px;
+        color: var(--preto);
+        text-align: center;
+        font-family: "IM Fell Great Primer SC", serif;
+    }
+
+    .conteudo1 h1 {
+        width: 90%;
+        font-size: 34px;
+        color: var(--preto);
+        text-align: center;
+    }
+
+    .eu {
+        width: 50%;
+        height: 50vh;
+        margin-right: 0px;
+        margin: 10px;
+    }
+
+    .phrase {
+        width: 100%;
+        font-size: 15px;
+        color: var(--preto);
+        text-align: center;
+        margin: 30px;
+    }
+
+    .dropdown {
+        width: 40%;
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropbtn {
+        display: block;
+        background-color: var(--botao);
+        padding: 10px;
+        border-radius: 50px;
+        border: none;
+        color: var(--branco);
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: var(--Sei);
+        padding: 10px;
+        border-radius: 50px;
+        border: none;
+        color: var(--preto);
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .flex img {
+        width: 40%;
+        height: 50%;
+        object-fit: cover;
+        margin: 20px;
+    }
+
+    .sec2 {
+        width: 100%;
+        height: 130vh;
+    }
+
+    .flex p {
+        font-family: "Graduate", serif;
+        font-size: 12px;
+        color: var(--preto);
+    }
+
+    .sec2 h1 {
+        font-family: "Graduate", serif;
+        font-size: 34px;
+        color: var(--preto);
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .projetos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .projetos a {
+        background-color: var(--cor);
+        width: 80%;
+        height: 15%;
+        scale: 0.8;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 20px;
+        font-family: "Nanum Gothic", sans-serif;
+        font-size: 22px;
+        color: var(--preto);
+    }
+
+    .sec3 {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .sec3 h1 {
+        font-family: "Graduate", serif;
+        font-size: 34px;
+        color: var(--preto);
+    }
+
+    .sec4 {
+        width: 100%;
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .tu {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .tu div {
+        width: 70%;
+        height: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cer1 img {
+        width: 95%;
+        height: 100vh;
+    }
+
+    .cer2 img {
+        width: 95%;
+        height: 100vh;
+    }
+
+    .cer3 img {
+        width: 95%;
+        height: 100vh;
+    }
+
+    .cer1 p {
+        width: 100%;
+        height: 100%;
+        font-family: "Graduate", serif;
+        font-size: 16px;
+        color: var(--preto);
+    }
+
+    .cer2 p {
+        width: 100%;
+        height: 100%;
+        font-family: "Graduate", serif;
+        font-size: 16px;
+        color: var(--preto);
+    }
+
+    .cer3 p {
+        width: 100%;
+        height: 100%;
+        font-family: "Graduate", serif;
+        font-size: 16px;
+        color: var(--preto);
+    }
+
+    .sec4 h1 {
+        font-family: "Graduate", serif;
+        font-size: 44px;
+        margin-top: 10px;
+        color: var(--preto);
+    }
+
+    .sec5 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .sec5 h1 {
+        font-family: "Graduate", serif;
+        font-size: 64px;
+        margin-top: 10px;
+        color: var(--preto);
+    }
+
+    .container-slides {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        gap: 1rem;
+    }
+
+    .imagens-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        aspect-ratio: 16 / 9;
+
+    }
+
+    .carroseu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        margin-bottom: 50px;
+    }
+
+    .carroseu img {
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+        display: block;
+        border-radius: 8px;
+        border-bottom: 50px;
+    }
+
+    .slide-texto {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+    }
+
+    .slide-texto h2 {
+        color: var(--branco);
+        font-size: 1.5rem;
+        margin: 0;
+        text-shadow: var(--opaco);
+    }
+
+    .on {
+        opacity: 1;
+        z-index: 1;
+    }
+
+    #volta,
+    #ir {
+        width: 30px;
+        height: 30px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    #volta img,
+    #ir img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .forms {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .sec4 {
+    height: auto;
+    gap: 30px;
+    padding: 20px 0 40px;
+}
+
+.tu {
+    height: auto;
+    gap: 40px;
+}
+
+.tu div {
+    width: 80%;
+    height: auto;
+    gap: 12px;
+}
+
+.tu img,
+.cer1 img,
+.cer2 img,
+.cer3 img {
+    width: 100%;
+    height: auto;
+}
+
+.cer1 p,
+.cer2 p,
+.cer3 p {
+    height: auto;
+}
+
+.sec5 {
+    height: auto;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.sec5 h1 {
+    font-size: 34px;
+}
+
+.container-slides {
+    min-height: auto;
+}
+
+.imagens-container {
+    width: 75%;
+    aspect-ratio: 4 / 3;
+}
+
+.carroseu img {
+    height: 100%;
+}
+.sec6 {
+    margin-top: 0px;
+}
+
+#roxo {
+    background-color: var(--Sei);
+    width: 80%;
+    height: 60%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sec6 h1 {
+    font-family: "Graduate", serif;
+    font-size: 34px;
+    margin-top: 10px;
+    color: var(--preto);
+}
+#roxo h2 {
+    font-size: 26px;
+}
+.forms {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#fundo {
+    width: 70%;
+    height: 80%;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cores);
+}
+.flexing {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 0;
+    padding: 24px 16px 0;
+    text-align: center;
+}
+
+.redes {
+    width: auto;
+    gap: 20px;
+}
+
+.redes a {
+    width: 36px;
+    height: 36px;
+}
+
+.insta,
+.link {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.direitos {
+    font-size: 14px;
+    margin: 16px;
+}
+.email h1 {
+    font-family: "Graduate", serif;
+    font-size: 30px;
+
+}
+
+.email h2 {
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    font-size: 18px;
+}
+}
